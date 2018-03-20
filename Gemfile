@@ -1,4 +1,4 @@
-source 'https://rubygems.org'
+source 'https://gems.ruby-china.org'
 
 if Gem::Version.new(Bundler::VERSION) < Gem::Version.new('1.5.0')
   abort "Redmine requires Bundler 1.5.0 or higher (you're using #{Bundler::VERSION}).\nPlease update with 'gem update bundler'."
@@ -37,9 +37,9 @@ end
 
 platforms :mri, :mingw, :x64_mingw do
   # Optional gem for exporting the gantt to a PNG file, not supported with jruby
-  group :rmagick do
-    gem "rmagick", ">= 2.14.0"
-  end
+  # group :rmagick do
+  #   gem "rmagick", ">= 2.14.0"
+  # end
 
   # Optional Markdown support, not for JRuby
   group :markdown do
@@ -81,6 +81,14 @@ end
 group :development do
   gem "rdoc", "~> 4.3"
   gem "yard"
+
+  gem 'capistrano'
+  gem 'capistrano-rails'
+  gem 'capistrano-bundler'
+  gem 'capistrano-rvm'
+  gem 'capistrano3-puma'
+  gem 'capistrano-sidekiq'
+  gem 'capistrano3-foreman'
 end
 
 group :test do

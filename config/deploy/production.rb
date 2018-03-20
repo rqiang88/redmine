@@ -7,7 +7,25 @@
 # server "example.com", user: "deploy", roles: %w{app web}, other_property: :other_value
 # server "db.example.com", user: "deploy", roles: %w{db}
 
+server '140.143.208.196', user: 'rxq', roles: %w{app web db}, other_property: :other_value
 
+# role-based syntax
+# ==================
+
+# Defines a role with one or multiple servers. The primary server in each
+# group is considered to be the first unless any hosts have the primary
+# property set. Specify the username and a domain or IP for the server.
+# Don't use `:all`, it's a meta role.
+
+# role :app, %w{deploy@example.com}, my_property: :my_value
+# role :web, %w{user1@primary.com user2@additional.com}, other_property: :other_value
+# role :db,  %w{deploy@example.com}
+
+set :user, 'rxq'
+set :rails_env, 'production'
+set :puma_env, 'production'
+set :branch, 'master'
+set :default_env, { path: "$PATH:$HOME/.rvm/bin:$HOME/.rvm/bin:`. $HOME/.nvm/nvm.sh && echo $NVM_BIN`" }
 
 # role-based syntax
 # ==================

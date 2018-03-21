@@ -79,7 +79,7 @@ require 'yaml'
 # end
 
 gem 'mysql2' 
-gem 'puma'
+gem 'puma', '~> 3.11'
 
 group :development do
   gem "rdoc", "~> 4.3"
@@ -99,8 +99,8 @@ group :test do
   gem "mocha"
   gem "simplecov", "~> 0.14.1", :require => false
   # For running system tests
-  gem 'puma', '~> 3.7'
-  gem "capybara", '~> 2.13'
+  # gem 'puma', '~> 3.7'
+  # gem "capybara", '~> 2.13'
   gem "selenium-webdriver"
 end
 

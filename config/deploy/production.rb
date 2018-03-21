@@ -25,7 +25,7 @@ set :user, 'rxq'
 set :rails_env, 'production'
 set :puma_env, 'production'
 set :branch, 'master'
-set :default_env, { path: "$PATH:$HOME/.rvm/bin:$HOME/.rvm/bin:`. $HOME/.nvm/nvm.sh && echo $NVM_BIN`" }
+# set :default_env, { path: "$PATH:$HOME/.rvm/bin:$HOME/.rvm/bin:`. $HOME/.nvm/nvm.sh && echo $NVM_BIN`" }
 
 # role-based syntax
 # ==================

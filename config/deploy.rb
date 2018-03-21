@@ -4,7 +4,7 @@ lock "~> 3.10.1"
 set :application, "redmine"
 set :repo_url, "https://github.com/rqiang88/redmine.git"
 
-set :deploy_to, "/opt/www/remine"
+set :deploy_to, "/opt/www/redmine"
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp

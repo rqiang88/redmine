@@ -221,7 +221,7 @@ DEPENDENCIES
   mime-types (~> 3.0)
   mimemagic
   mocha
-  mysql2 (~> 0.4.6)
+  mysql2
   net-ldap (~> 0.16.0)
   nokogiri (~> 1.8.0)
   puma (~> 3.7)

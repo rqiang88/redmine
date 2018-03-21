@@ -79,6 +79,7 @@ require 'yaml'
 # end
 
 gem 'mysql2' 
+gem 'puma'
 
 group :development do
   gem "rdoc", "~> 4.3"
